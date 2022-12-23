@@ -1,0 +1,127 @@
+body {
+  margin: 20px;
+}
+
+.blink_txt {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+
+.waiting {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #04aa6d;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #04aa6d;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.blockout {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: orange;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button {
+  display: none;
+  width: 100%;
+  padding: 8px 0;
+  margin: 8px auto;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+p {
+  border-bottom: 1px dashed #ddd;
+}
+
+#pictureUrl {
+  margin: 0 auto;
+  width: 32%;
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  box-pack: center;
+  box-align: center;
+  -moz-border-radius: 256px;
+  -webkit-border-radius: 256px;
+  border-radius: 256px;
+}
+
+#lbllogohos {
+  margin: 0 auto;
+  width: 100%;
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  box-pack: center;
+  box-align: center;
+}
+
+#logohos {
+  margin: 0 auto;
+  width: 100px;
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  box-pack: center;
+  box-align: center;
+}
+
+#accessToken,
+#utouId {
+  display: block;
+  overflow: auto;
+}
